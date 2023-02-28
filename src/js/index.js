@@ -27,11 +27,15 @@ setInterval(() => {
       decenaSeconds = 0;
       centenaSeconds++;
       break;
+    case centenaSeconds > 8:
+      centenaSeconds = 0;
+      hora1++;
+      break;
     case hora1 > 8:
       hora1 = 0;
       hora2++;
       break;
-    case hora2 > 8:
+      case hora2 > 8:
       hora2 = 0;
       hora3++;
       break;
@@ -50,5 +54,5 @@ setInterval(() => {
     />,
     document.querySelector("#app")
   );
-}, 100);
+}, 1000);
 //render your react application
